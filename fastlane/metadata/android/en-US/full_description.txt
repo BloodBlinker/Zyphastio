@@ -1,0 +1,8 @@
+Zyphastio is a modern, privacy-focused Intermittent Fasting tracker designed for simplicity and aesthetics.
+
+Features:
+* Multiple fasting protocols (16:8, OMAD, Custom, etc.)
+* Comprehensive statistics and Streak tracking
+* Beautiful Dark Mode interface
+* Local-only database (Isar) - No cloud sync, 100% private
+* Fast and lightweight
