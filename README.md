@@ -49,7 +49,12 @@
 
 ## 📸 Screenshots
 
-*(Add screenshots of your Dashboard, Stats, and Settings screens here)*
+<div align="center" style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
+  <img src="assets/screenshots/1.jpeg" width="220" alt="Screenshot 1" />
+  <img src="assets/screenshots/2.jpeg" width="220" alt="Screenshot 2" />
+  <img src="assets/screenshots/3.jpeg" width="220" alt="Screenshot 3" />
+  <img src="assets/screenshots/4.jpeg" width="220" alt="Screenshot 4" />
+</div>
 
 ---
 
