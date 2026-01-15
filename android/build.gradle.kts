@@ -15,15 +15,26 @@ subprojects {
     val newSubprojectBuildDir: Directory = newBuildDir.dir(project.name)
     project.layout.buildDirectory.value(newSubprojectBuildDir)
 
-    if (project.name == "isar_flutter_libs") {
-        project.pluginManager.withPlugin("com.android.library") {
+    afterEvaluate {
+        if (project.plugins.hasPlugin("com.android.library") || project.plugins.hasPlugin("com.android.application")) {
             val android = project.extensions.findByName("android")
             if (android != null) {
+                // Force compileSdk to 36 to fix resource linking errors (lStar)
                 try {
-                     val setNamespace = android.javaClass.getMethod("setNamespace", String::class.java)
-                     setNamespace.invoke(android, "dev.isar.isar_flutter_libs")
+                    val setCompileSdkVersion = android.javaClass.getMethod("setCompileSdkVersion", Int::class.javaPrimitiveType)
+                    setCompileSdkVersion.invoke(android, 36)
                 } catch (e: Exception) {
-                    println("Failed to set namespace: $e")
+                    println("Failed to force compileSdk: $e")
+                }
+
+                // Keep existing namespace hack for isar if needed
+                if (project.name == "isar_flutter_libs") {
+                     try {
+                          val setNamespace = android.javaClass.getMethod("setNamespace", String::class.java)
+                          setNamespace.invoke(android, "dev.isar.isar_flutter_libs")
+                     } catch (e: Exception) {
+                         println("Failed to set namespace: $e")
+                     }
                 }
             }
         }
