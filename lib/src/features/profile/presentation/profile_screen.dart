@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'logic/profile_controller.dart';
 
 class ProfileScreen extends ConsumerWidget {
@@ -16,7 +15,8 @@ class ProfileScreen extends ConsumerWidget {
       appBar: AppBar(
         title: Text(
           'PROFILE',
-          style: GoogleFonts.outfit(
+          style: TextStyle(
+            fontFamily: 'Outfit',
             fontWeight: FontWeight.bold,
             letterSpacing: 1.5,
           ),

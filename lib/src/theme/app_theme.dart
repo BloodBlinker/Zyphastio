@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
   // A vibrant, energy-focused seed color (Teal/Cyan)
@@ -43,7 +42,7 @@ class AppTheme {
     );
 
     return baseTheme.copyWith(
-      textTheme: GoogleFonts.outfitTextTheme(baseTheme.textTheme),
+      textTheme: baseTheme.textTheme.apply(fontFamily: 'Outfit'),
     );
   }
 
@@ -66,7 +65,7 @@ class AppTheme {
     );
 
     return baseTheme.copyWith(
-      textTheme: GoogleFonts.outfitTextTheme(baseTheme.textTheme),
+      textTheme: baseTheme.textTheme.apply(fontFamily: 'Outfit'),
     );
   }
 }

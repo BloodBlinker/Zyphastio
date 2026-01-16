@@ -1,7 +1,6 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import '../../fasting/domain/fasting_session.dart';
 import 'logic/stats_controller.dart';
@@ -19,7 +18,8 @@ class StatsScreen extends ConsumerWidget {
       appBar: AppBar(
         title: Text(
           'STATISTICS',
-          style: GoogleFonts.outfit(
+          style: TextStyle(
+            fontFamily: 'Outfit',
             fontWeight: FontWeight.bold,
             letterSpacing: 1.5,
           ),
