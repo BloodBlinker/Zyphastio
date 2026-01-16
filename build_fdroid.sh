@@ -5,7 +5,7 @@
 
 set -e
 
-FLUTTER_VERSION="3.24.0"
+FLUTTER_VERSION="3.10.4"
 FLUTTER_URL="https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_${FLUTTER_VERSION}-stable.tar.xz"
 
 # Directories
