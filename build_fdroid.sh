@@ -49,7 +49,7 @@ build() {
     flutter build apk --release
     
     echo "Build complete!"
-    echo "APK location: build/app/outputs/flutter-apk/app-release.apk"
+    echo "APK location: build/app/outputs/apk/release/app-release.apk"
 }
 
 # Main
