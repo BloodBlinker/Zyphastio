@@ -1,22 +1,14 @@
 # .fdroid.yml – metadata for the Zyphastio Flutter app
 Categories:
-  - Productivity
-  - Utilities
+  - Sports & Health
 License: MIT
-SourceCode: https://github.com/your-org/zyphastio
-IssueTracker: https://github.com/your-org/zyphastio/issues
-Changelog: https://github.com/your-org/zyphastio/blob/main/CHANGELOG.md
-Donate: https://github.com/sponsors/your-org
+SourceCode: https://github.com/BloodBlinker/Zyphastio
+IssueTracker: https://github.com/BloodBlinker/Zyphastio/issues
 
-# Build configuration – F-Droid builds the APK itself
-Builds:
-  - versionName: 1.0.9
-    versionCode: 10
-    commit: v1.0.9
-    subdir: .
-    gradle:
-      - "app"
-    # The command F-Droid runs (Flutter 3.22+ required, or matches SDK constraint)
-    # This mirrors the local command we verified:
-    #   flutter build apk --release
-    # F-Droid will auto-sign the APK.
+AutoName: Zyphastio
+Summary: Efficient fasting tracker
+Description: |
+    Zyphastio helps you track your fasting windows effectively.
+
+RepoType: git
+Repo: https://github.com/BloodBlinker/Zyphastio.git
